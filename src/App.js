@@ -1,33 +1,20 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+// eslint-disable-next-line
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
-import TodosLogic from './components/TodosLogic/TodosLogic';
+import Home from './components/Home/Home';
+import Profile from './components/Profile/Profile';
+import About from './components/About/About';
 
 function App() {
-  const [todos, setTodos] = useState([]);
-
-  const saveToLocalStorage = () => {
-    localStorage.setItem('todos', JSON.stringify(todos));
-  };
-
-  useEffect(() => {
-    const todosFromlocalStorage = localStorage.getItem('todos');
-    const arr = JSON.parse(todosFromlocalStorage);
-    if (arr) {
-      setTodos([...arr]);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (todos.length) {
-      localStorage.setItem('todos', JSON.stringify(todos));
-    }
-  }, [todos]);
-
   return (
     <div className="app">
       <Header />
-      <TodosLogic todos={todos} setTodos={setTodos} saveToLocalStorage={saveToLocalStorage} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }

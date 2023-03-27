@@ -25,6 +25,8 @@ function TodosLogic(props) {
 
   return (
     <div className="todos-logic">
+      <h1>Todos</h1>
+      <p>Your todos are listed below</p>
       <div className="todos-logic__input-section">
         <input
           placeholder="Add your todo here"
