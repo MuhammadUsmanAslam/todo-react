@@ -75,29 +75,8 @@ function TodoItem(props) {
                   if (event.target.value) {
                     const updatedTodos = todos.filter((todoToChange) => {
                       if (todoToChange.id === todo.id) {
-                        // todoToChange.todo = event.target.value;
-                        const obj = {
-                          todo: event.target.value,
-                          id: todoToChange.id,
-                          completed: todoToChange.completed,
-                        };
-
-                        return obj;
-                        // return {
-                        //   todo: event.target.value,
-                        //   id: todoToChange.id,
-                        //   completed: todoToChange.completed,
-                        // };
-                        //
-                        // console.log(todoToChange);
-                        // const obj = {
-                        //   todo: event.target.value,
-                        //   id: todoToChange.id,
-                        //   completed: todoToChange.completed
-                        // }
-                        // console.log(obj);
-                        // return obj;
-                        //
+                        // eslint-disable-next-line
+                        return todoToChange.todo = event.target.value;
                       }
                       return todo;
                     });
