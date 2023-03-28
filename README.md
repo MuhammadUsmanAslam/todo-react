@@ -61,7 +61,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Complete ToDo List Application**
+- **Created with React**
+- **Add new ToDo to the list**
+- **Delete a ToDo from the list**
+- **Update ToDO to the list**
+- **Edit a ToDo from the list**
+- **Data is stored in localStorage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,13 +125,6 @@ You can deploy this project using:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- **Created with React**
-- **Add new ToDo to the list**
-- **Delete a ToDo from the list**
-- **Update ToDO to the list**
-- **Edit a ToDo from the list**
-- **Data is stored in localStorage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
